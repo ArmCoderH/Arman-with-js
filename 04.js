@@ -10,6 +10,15 @@
 // console.log(2 + "1" + 3);
 // console.log(2 + 2 + "1");
 
+
+
+
+
+
+
+
+
+
 let x = 2
 let y = x++
 console.log(y);
