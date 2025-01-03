@@ -9,5 +9,22 @@ const user = {
     }
 }
 
+
+
 user.welcomemsg()
+user.username = "arman"
+user.welcomemsg()
+
+console.log(this);
+
+
+function chai()
+{
+    console.log(this);
+    
+}
+
+chai()
+
+
 
