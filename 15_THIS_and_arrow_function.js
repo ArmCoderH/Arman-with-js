@@ -26,5 +26,16 @@ function chai()
 
 chai()
 
+if (true) {
+
+    const id = 321;
+    if(true)
+    {
+        console.log(id);
+        
+    }
+    console.log(id);
+}
+//console.log(id);
 
 
