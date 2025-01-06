@@ -52,9 +52,48 @@ for (let i = 1; i <= 10; i++) {
 
     const element = i;
     if (element==5) {
-        console.log("5 is present");
+        // console.log("5 is present");
         continue;
     }
 
-    console.log(i);
+    // console.log(i);
 }
+
+
+
+
+
+
+
+
+
+//while loop
+
+const myArray1 = ["arman","ruhan","ayan","husen"]
+let i = 0;
+
+
+while (i<myArray1.length) {
+  //  console.log(`value of ${myArray1[i]}`);
+    i++;
+}
+
+
+
+
+let score = 11;
+do {
+    // console.log(score);
+    score++;
+    
+} while (score<=10);
+
+
+
+
+
+
+
+
+
+//
