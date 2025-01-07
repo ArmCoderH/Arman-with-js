@@ -1,0 +1,19 @@
+//In DOM(dcoument object model)
+
+//in console on browser
+
+document.getElementById('title') 
+
+id.style.backgroundColor = 'green'
+
+innerText
+innerHTML
+innerContents
+
+querySelctor <<<<<<<<--- select node like list item and other things and change many but only one ndoe select
+
+querySelctorAll <<<<<--- select all item list  
+
+
+
+
