@@ -21,11 +21,11 @@
 
 let x = 2
 let y = x++
-console.log(y);
+// console.log(y);
 
 let p = 2
 let q = ++x
-console.log(q);
+// console.log(q);
 
 //
 
@@ -42,8 +42,8 @@ console.log(q);
 // console.log(null>=0);
 // console.log(null<=0);
 
-console.log(2==2);
-console.log("2"===2); //<-check data type
+// console.log(2==2);
+// console.log("2"===2); //<-check data type
 
 
 
