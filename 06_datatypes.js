@@ -50,7 +50,7 @@ console.log(typeof my);
 const myFuction = function()
 {
     console.log("Namaste Dunia");
-    
+     
 }
 console.log(typeof myFuction);
 
