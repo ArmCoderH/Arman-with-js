@@ -18,9 +18,6 @@ console.log(typeof scoreINOne);
 
 console.log(scoreINOne);
 
- 
-
-
 
 /*
 
