@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="Orange">Orange</button>
+    <button id="Green">Green</button>
+</body>
+<script>
+    // ***************** Lexical scoping *********************8
+
+// function outer (){
+
+//     let username = "arman"
+//     function inner() {
+//         console.log("inner scope",username);
+//     }
+//     inner();
+// }
+// outer();
+// console.log("outer scope",username);
+
+// function outer (){
+
+//     let username = "arman"
+//     function inner() {
+//         let email = "example@google.com"
+//         console.log("inner one user",username);
+//     }
+//     function innerTwo(){
+//         console.log("inner two user",username);
+//         // console.log("inner two email",email); this is not posible
+//     }
+//     inner();
+//     innerTwo();
+// }
+// outer();
+// console.log("outer scope",username);  this is also not posible
+
+
+
+function outer (){
+
+let username = "arman"
+function inner() {
+    console.log("inner one user",username);
+    // innerTwo()
+}
+function innerTwo(){
+    console.log("inner two user",username);
+    inner()
+}
+innerTwo();
+}
+outer();
+// console.log("outer scope",username);  this is also not posible
+
+
+// ****************** CLOSURE ***************** 
+
+
+</script>
+<script>
+
+    // document.getElementById('Orange').onclick = function(){
+    //     //alert('YES this is orange')
+    //     document.body.style.backgroundColor = 'orange'
+    // }
+    // document.getElementById('Green').onclick = function(){
+    //     document.body.style.backgroundColor = 'green'
+    // }
+
+    function clickHandler(color) {
+        
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }    
+    } 
+    document.getElementById('Green').onclick = clickHandler("green")
+    document.getElementById('Orange').onclick = clickHandler("orange")
+</script>
+</html>
